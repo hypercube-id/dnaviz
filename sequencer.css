@@ -1,0 +1,46 @@
+:root {
+	--mainColor: rgba(0,0,0,1);
+}
+body{
+       background-color: black;
+}    
+container{
+	background-color: var(--mainColor);
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width:100%;
+        height:100%;
+        z-index: -1;
+        cursor: none;
+}
+
+div:-webkit-full-screen {
+  width: 100% !important;
+}
+div:-moz-full-screen {
+  width: 100% !important;
+}
+div:-ms-fullscreen {
+  width: 100% !important;
+}
+div:fullscreen {
+  width: 100% !important;
+}
+
+/* While in fullscreen, hide any children with class 'tohide' */
+:-webkit-full-screen .tohide {
+  display: none;
+}
+:-moz-full-screen .tohide {
+  display: none;
+}
+:-ms-fullscreen .tohide {
+  display: none;
+}
+:fullscreen .tohide {
+  display: none;
+}
